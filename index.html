@@ -31,13 +31,14 @@
             border-radius: 20px;
             padding-top: 20px;
         }
-        .hamster-img {
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 50%;
+        .emoji {
+            font-size: 70px;
             margin-bottom: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-8px); }
         }
         .container h1 {
             font-size: 2em;
@@ -76,7 +77,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3ZpcHB6am55bzE2MGJvNDBqOW42aWp3aXl1bThnd3E3eHNtYmt1ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9xy4w9A2p2l72dE8T6/giphy.gif" alt="Cute Hamster" class="hamster-img">
+        <div class="emoji">🐹 🥺</div>
         <h1>Do you love me?</h1>
         <div class="btn">
             <a href="#" id="yes">YES</a>
@@ -92,7 +93,7 @@
         });
         
         document.getElementById('yes').addEventListener('click', function() {
-            alert('Yay! ❤️ Bong slanh Jane!');
+            alert('Yayyyyyy! ❤️ Bong slanh oun Jane!');
         });
     </script>
 </body>
